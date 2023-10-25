@@ -16,7 +16,10 @@ function MovieCard({item}) {
                 <Badge className='card-badge position-absolute p-3' bg="info">{item.vote_average.toFixed(1)}</Badge>
                 <Card.Body>
                     <Card.Title className='text-center fw-bold'>
-                        <Link className='btn-link link-dark link-underline-opacity-0 link-opacity-75-hover'>{item.title || item.name}</Link>
+                        <Link
+                        className='btn-link link-dark link-underline-opacity-0 link-opacity-75-hover'
+                        to={`/${item.title||item.name}/${item.id}`}
+                        >{item.title || item.name}</Link>
                     </Card.Title>
                 </Card.Body>
             </Card>

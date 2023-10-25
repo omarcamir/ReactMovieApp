@@ -4,7 +4,10 @@ import { faFilter, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import './Search.css'
 import Select from 'react-select'
 
-function Search() {
+function Search({search}) {
+    const onSearch = (word)=>{
+      search(word)
+    }
     const options = [
         { value: 'chocolate', label: 'Chocolate' },
         { value: 'strawberry', label: 'Strawberry' },
@@ -21,7 +24,7 @@ function Search() {
             <div className="col-sm-8 col-md-5">
                 <div className="search d-flex justify-content-between align-items-center">
                     <FontAwesomeIcon icon={faMagnifyingGlass} className='me-1 fs-5'/>
-                    <input className='form-control border-0 bg-transparent ms-2' type="search" placeholder="Find movies tv shows documentary and more..." />
+                    <input onChange={(e)=>{onSearch(e.target.value)}} className='form-control border-0 bg-transparent ms-2' type="search" placeholder="Find movies tv shows documentary and more..." />
                 </div>
             </div>
             <div className="col-sm-4 col-md-2">
