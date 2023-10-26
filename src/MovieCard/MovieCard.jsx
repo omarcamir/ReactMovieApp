@@ -18,7 +18,7 @@ function MovieCard({item}) {
                     <Card.Title className='text-center fw-bold'>
                         <Link
                         className='btn-link link-dark link-underline-opacity-0 link-opacity-75-hover'
-                        to={`/${item.title||item.name}/${item.id}`}
+                        to={`/${item.media_type}/${item.id}`}
                         >{item.title || item.name}</Link>
                     </Card.Title>
                 </Card.Body>

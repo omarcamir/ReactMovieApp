@@ -75,7 +75,7 @@ p{
         display: none;
     }
     .text-color {
-      color: #000; /* Dark color for small screens */
+      color: #000 !important; /* Dark color for small screens */
     }
   }
   
