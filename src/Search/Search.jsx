@@ -9,9 +9,9 @@ function Search({search}) {
       search(word)
     }
     const options = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' },
+        { value: 'movie', label: 'Movie' },
+        { value: 'tv', label: 'TV' },
+        { value: 'person', label: 'Person' },
       ]
       const filterIcon = (
         <>

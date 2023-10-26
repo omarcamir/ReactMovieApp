@@ -58,24 +58,24 @@ function MovieDetails() {
                                         <li className='mx-3 ps-sm-4'>{details.release_date}</li>
                                     </ul>
                                 </div>
-                            </div>
-                        </div>
-                        <div className=" black-details d-flex justify-content-start justify-content-md-between align-items-center flex-wrap">
-                            <div className="col-md-12 col-lg-8">
-                                <div className="d-flex">
-                                    <p className='rate m-5 px-3'><span className=" fs-1 fw-bold">{details.vote_average.toFixed(1)}</span> <sub className='fw-bold'>IMDb</sub></p>
-                                    <div className="d-flex flex-column justify-content-center">
-                                        <p className='text-muted'>status</p>
-                                        <p className='text-dark fw-bold'>{details.status}</p>
+                                <div className=" text-color-lg black-details d-flex mt-5 justify-content-start justify-content-md-between align-items-center flex-wrap">
+                                    <div className="col-md-12 col-lg-8">
+                                        <div className="d-flex">
+                                            <p className='rate m-5 px-3'><span className=" fs-1 fw-bold">{details.vote_average}</span> <sub className='fw-bold'>IMDb</sub></p>
+                                            <div className="d-flex flex-column justify-content-center">
+                                                <p className='text-muted'>status</p>
+                                                <p className='text-dark fw-bold'>{details.status}</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-md-12 col-lg-4">
-                                <div className="d-flex justify-content-center justify-content-lg-end align-items-center">
-                                    <button className='btn btn-dark fs-2 px-4 mx-2'>+</button>
-                                    <button className='btn btn-light fs-2 px-4 mx-2'>
-                                    <FontAwesomeIcon icon={faHeart} />
-                                    </button>
+                                    <div className="col-md-12 col-lg-4">
+                                        <div className="d-flex justify-content-center justify-content-lg-end align-items-center">
+                                            <button className='btn btn-dark fs-2 px-4 mx-2'>+</button>
+                                            <button className='btn btn-light fs-2 px-4 mx-2'>
+                                            <FontAwesomeIcon icon={faHeart} />
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

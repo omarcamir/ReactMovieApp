@@ -8,11 +8,12 @@ function MovieCard({item}) {
   return (
         <div className="col-sm-12 col-md-4 col-lg-3 my-2">
             <Card className='border-0'>
-                <Card.Img
-                variant="top"
-                src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
-                className='card-img w-100 d-block position-relative'
-                />
+                <Link to={`/${item.media_type}/${item.id}`}>
+                    <Card.Img
+                    variant="top"
+                    src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
+                    className='card-img w-100 d-block position-relative'
+                /></Link>
                 <Badge className='card-badge position-absolute p-3' bg="info">{item.vote_average.toFixed(1)}</Badge>
                 <Card.Body>
                     <Card.Title className='text-center fw-bold'>
