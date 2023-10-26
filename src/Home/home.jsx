@@ -12,6 +12,7 @@ function Home() {
   }
   useEffect(()=>{
     getMovies()
+    console.log(getMovies())
   },[])
 
   const search = async (query)=>{
