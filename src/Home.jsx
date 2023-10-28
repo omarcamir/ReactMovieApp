@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
-import Search from '../Search/Search'
-import MovieCard from '../MovieCard/MovieCard'
+import Search from './Search/Search'
+import MovieCard from './MovieCard/MovieCard'
 import axios from "axios";
 import { useState } from 'react';
-import NotFound from '../NotFound/NotFound';
+import NotFound from './NotFound/NotFound';
 function Home() {
   const [movies , setMovies] = useState([])
   const getMovies = async ()=>{

@@ -1,5 +1,5 @@
 import NavBar from "./NavBar/NavBar";
-import Home from "./Home/Home";
+import Home from "./Home";
 import Movies from "./Movies/Movies";
 import TvShows from "./TvShows/TvShows";
 import Celebs from "./Celebs/Celebs";
